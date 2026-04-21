@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #F8FAFC; /* Slate 50 */
+  --color-brand-surface: #FFFFFF;
+  
+  --color-brand-gray-50: #F1F5F9;
+  --color-brand-gray-100: #E2E8F0;
+  --color-brand-gray-200: #CBD5E1;
+  --color-brand-gray-300: #94A3B8;
+  --color-brand-gray-400: #64748B;
+  --color-brand-gray-500: #475569;
+  --color-brand-gray-600: #334155;
+  --color-brand-gray-800: #1E293B;
+  --color-brand-gray-900: #0F172A;
+  
+  --color-accent-blue-primary: #2563EB; /* Blue 600 */
+  --color-accent-blue-hover: #1D4ED8; /* Blue 700 */
+  --color-accent-blue-light: #EFF6FF; /* Blue 50 */
+  
+  --color-accent-green: #10B981;
+  --color-accent-amber: #F59E0B;
+  --color-accent-red: #EF4444;
+
+  --font-sans: var(--font-inter);
+  --font-header: var(--font-blinker);
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-gray-900);
+}
+
+/* Custom scrollbar for light theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-gray-200);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-gray-300);
+}
